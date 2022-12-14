@@ -10,7 +10,7 @@ class TemperatureSensor(Base):
     id = Column(Integer,nullable=False)
     type = Column(String(19),nullable=False)
     timestamp = Column(DateTime())
-    value = Column(Float(),nullable=False)
+    value = Column(Float(precision=3),nullable=False)
     
     __table_args__ = (
         PrimaryKeyConstraint(id, timestamp),
@@ -23,7 +23,7 @@ class HumiditySensor(Base):
     id = Column(Integer,nullable=False)
     type = Column(String(19),nullable=False)
     timestamp = Column(DateTime())
-    value = Column(Float(),nullable=False)
+    value = Column(Float(precision=3),nullable=False)
 
     __table_args__ = (
         PrimaryKeyConstraint(id, timestamp),

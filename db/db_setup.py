@@ -6,7 +6,7 @@ from sqlalchemy.orm import sessionmaker
 from dotenv import load_dotenv
 
 load_dotenv()
-SQLALCHEMY_DATABASE_URI = "postgresql://xzuismnj:a5PQ0RBUaVkZKhtVtz4hzWKH6X5osODI@mouse.db.elephantsql.com/xzuismnj"
+SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URL") or "sqlite:///data.db"
 
 engine = create_engine(SQLALCHEMY_DATABASE_URI,
                         connect_args={},
