@@ -1,4 +1,12 @@
+# REST API
 
+In this repository, you can access two implementations of RESTful APIs, which are capable of storing raw measurements from sensors and retrieving data aggregates from 
+these sensors upon request. There are two branches available for each.
+
+
+ - [fastapi](https://github.com/itsparsa/assignment/tree/fastapi)
+ - [flask](https://github.com/itsparsa/assignment/tree/flask)
+ 
 ## Functionallity
 ###  inputs :
 server will get the following attributes:
